@@ -1,5 +1,7 @@
 Changes
+inc/Module/AutoInstall.pm
 inc/Module/Install.pm
+inc/Module/Install/AutoInstall.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -7,6 +9,7 @@ inc/Module/Install/Include.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 inc/Module/Install/StandardTests.pm
+inc/Module/Install/Template.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 inc/Test/CompanionClasses.pm
@@ -34,7 +37,9 @@ lib/Class/Value/Net/Exception/NAPTR/MalformedServices.pm
 lib/Class/Value/Net/Hostname.pm
 lib/Class/Value/Net/IPAddress.pm
 lib/Class/Value/Net/IPAddress/IPv4.pm
+lib/Class/Value/Net/IPAddress/IPv4_TEST.pm
 lib/Class/Value/Net/IPAddress/IPv6.pm
+lib/Class/Value/Net/IPAddress/IPv6_TEST.pm
 lib/Class/Value/Net/NAPTR/CharacterString.pm
 lib/Class/Value/Net/NAPTR/CharacterString_TEST.pm
 lib/Class/Value/Net/NAPTR/Flags.pm
@@ -58,4 +63,3 @@ README
 t/01_companion_classes.t
 t/02_hostname.t
 t/perlcriticrc
-t/README.txt

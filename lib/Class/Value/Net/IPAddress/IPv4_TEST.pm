@@ -1,6 +1,4 @@
-package Class::Value::Net::NAPTR::Preference_TEST;
-
-# $Id: Preference_TEST.pm 11581 2006-06-06 14:29:18Z ek $
+package Class::Value::Net::IPAddress::IPv4_TEST;
 
 use strict;
 use warnings;
@@ -9,12 +7,10 @@ use warnings;
 our $VERSION = '0.02';
 
 
-use base 'Class::Value::Net::NAPTR::UInt16_TEST';
-
-
-sub expected_malformed_exception {
-    "Class::Value::Net::Exception::NAPTR::MalformedPreference";
-}
+use base qw(
+    Class::Value::Test
+    Data::Semantic::Net::IPAddress::TestData::IPv4
+);
 
 
 1;
@@ -23,30 +19,32 @@ sub expected_malformed_exception {
 __END__
 
 
-
 =head1 NAME
 
-Class::Value::Net::NAPTR::Preference_TEST - network-related value objects
+Class::Value::Net::IPAddress::IPv4_TEST - Test companion class
 
 =head1 SYNOPSIS
 
-    Class::Value::Net::NAPTR::Preference_TEST->new;
+    perl t/01_companion_classes.t
 
 =head1 DESCRIPTION
 
-None yet. This is an early release; fully functional, but undocumented. The
-next release will have more documentation.
+Test companion class for L<Class::Value::Net::IPAddress::IPv4>. Gets its
+test data from L<Data::Semantic::Net::IPAddress::TestData::IPv4>.
 
-Class::Value::Net::NAPTR::Preference_TEST inherits from
-L<Class::Value::Net::NAPTR::UInt16_TEST>.
+Class::Value::Net::IPAddress::IPv4_TEST inherits from L<Class::Value::Test>
+and L<Data::Semantic::Net::IPAddress::TestData::IPv4>.
 
-The superclass L<Class::Value::Net::NAPTR::UInt16_TEST> defines these
-methods and functions:
+The superclass L<Class::Value::Test> defines these methods and functions:
 
-    BAIL_OUT(), PLAN(), can_ok(), cmp_ok(), diag(), eq_array(), eq_hash(),
+    BAIL_OUT(), can_ok(), cmp_ok(), diag(), eq_array(), eq_hash(),
     eq_set(), fail(), is(), is_deeply(), isa_ok(), isnt(), like(), ok(),
-    pass(), plan(), require_ok(), run(), skip(), throws2_ok(), todo(),
-    todo_skip(), unlike(), use_ok()
+    pass(), plan(), require_ok(), skip(), todo(), todo_skip(), unlike(),
+    use_ok()
+
+The superclass L<Data::Semantic::Test> defines these methods and functions:
+
+    PLAN(), munge_args(), run(), test_is_invalid(), test_is_valid()
 
 The superclass L<Test::CompanionClasses::Base> defines these methods and
 functions:
@@ -82,6 +80,11 @@ The superclass L<Data::Inherited> defines these methods and functions:
 
     every_hash(), every_list(), flush_every_cache_by_key()
 
+The superclass L<Data::Semantic::Net::IPAddress::TestData::IPv4> defines
+these methods and functions:
+
+    TESTDATA()
+
 =head1 METHODS
 
 =over 4
@@ -97,7 +100,7 @@ please use the C<classvaluenet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.02 of L<Class::Value::Net::NAPTR::Preference_TEST>.
+This document describes version 0.02 of L<Class::Value::Net::IPAddress::IPv4_TEST>.
 
 =head1 BUGS AND LIMITATIONS
 
@@ -132,4 +135,5 @@ it under the same terms as Perl itself.
 
 
 =cut
+
 
