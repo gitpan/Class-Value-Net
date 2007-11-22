@@ -8,7 +8,7 @@ use Test::More;
 use Error::Hierarchy::Test 'throws2_ok';
 
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 use base 'Test::CompanionClasses::Base';
@@ -110,7 +110,7 @@ please use the C<classvaluenet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.02 of L<Class::Value::Net::NAPTR::UInt16_TEST>.
+This document describes version 0.03 of L<Class::Value::Net::NAPTR::UInt16_TEST>.
 
 =head1 BUGS AND LIMITATIONS
 

@@ -4,6 +4,13 @@ global:
 releases:
   - author: 'Marcel Gruenauer <marcel@cpan.org>'
     changes:
+      - set the version to 0.03
+      - 'Makefile.PL: now requires Test::CompanionClasses 0.03; earlier versions had a bug in make_real_object()'
+    date: 2007-11-22T13:08:28Z
+    tags: []
+    version: 0.03
+  - author: 'Marcel Gruenauer <marcel@cpan.org>'
+    changes:
       - Converted Changes file to YAML style
       - '.shipit: added Twitter step'
       - 'Makefile.PL: added auto_install() and process_templates()'

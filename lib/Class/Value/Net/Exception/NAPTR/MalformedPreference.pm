@@ -6,7 +6,7 @@ use strict;
 use warnings;
 
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 use base 'Class::Value::Net::Exception::NAPTR';
@@ -110,7 +110,7 @@ please use the C<classvaluenet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.02 of L<Class::Value::Net::Exception::NAPTR::MalformedPreference>.
+This document describes version 0.03 of L<Class::Value::Net::Exception::NAPTR::MalformedPreference>.
 
 =head1 BUGS AND LIMITATIONS
 

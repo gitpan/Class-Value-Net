@@ -7,7 +7,7 @@ use warnings;
 use Error::Hierarchy::Mixin;  # get UNIVERSAL::record needed in subclasses
 
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 use base 'Class::Value::String';
@@ -130,7 +130,7 @@ please use the C<classvaluenet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.02 of L<Class::Value::Net>.
+This document describes version 0.03 of L<Class::Value::Net>.
 
 =head1 BUGS AND LIMITATIONS
 

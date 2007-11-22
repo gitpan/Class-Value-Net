@@ -10,7 +10,7 @@ requires 'Class::Value::SemanticAdapter';
 requires 'Data::Semantic::Net';
 requires 'Error::Hierarchy';
 
-build_requires 'Test::CompanionClasses';
+build_requires 'Test::CompanionClasses' => '0.03';
 build_requires 'Test::More' => '0.70';
 
 process_templates(

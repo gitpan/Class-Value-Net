@@ -7,7 +7,7 @@ use warnings;
 use Test::More;
 
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 use base 'Class::Value::Test';
@@ -99,7 +99,7 @@ please use the C<classvaluenet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.02 of L<Class::Value::Net::NAPTR::CharacterString_TEST>.
+This document describes version 0.03 of L<Class::Value::Net::NAPTR::CharacterString_TEST>.
 
 =head1 BUGS AND LIMITATIONS
 
