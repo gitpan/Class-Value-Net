@@ -1,29 +1,58 @@
-use inc::Module::Install;
-include 'Module::AutoInstall';
 
-name 'Class-Value-Net';
-all_from 'lib/Class/Value/Net.pm';
-perl_version '5.006';
+use strict;
+use warnings;
 
-requires 'Class::Value';
-requires 'Class::Value::SemanticAdapter';
-requires 'Data::Semantic::Net';
-requires 'Error::Hierarchy';
+ BEGIN { require 5.008; } 
 
-build_requires 'Test::CompanionClasses' => '0.03';
-build_requires 'Test::More' => '0.70';
+use ExtUtils::MakeMaker 6.11;
 
-process_templates(
-    first_year    => 2004,
-    rest_from     => "$ENV{HOME}/.mitlib/standard_pod",
-    start_tag     => '{%',
-    end_tag       => '%}',
-    other_authors => [
-        'Heinz Ekker C<< <ek@univie.ac.at> >>',
-    ],
-);
 
-use_standard_tests(without => 'pod_coverage');
-auto_install;
-auto_include;
-WriteAll;
+
+my %WriteMakefileArgs = (
+                       'test' => {
+                                   'TESTS' => 't/*.t'
+                                 },
+                       'NAME' => 'Class::Value::Net',
+                       'DISTNAME' => 'Class-Value-Net',
+                       'CONFIGURE_REQUIRES' => {
+                                                 'ExtUtils::MakeMaker' => '6.11'
+                                               },
+                       'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
+                       'BUILD_REQUIRES' => {},
+                       'ABSTRACT' => 'Network-related value objects',
+                       'EXE_FILES' => [],
+                       'VERSION' => '1.100840',
+                       'PREREQ_PM' => {
+                                        'Scalar::Util' => '0',
+                                        'Class::Value' => '0',
+                                        'Data::Semantic::Net::IPAddress::TestData::IPv4' => '0',
+                                        'Error' => '0',
+                                        'Test::CompanionClasses::Base' => '0',
+                                        'File::Find' => '0',
+                                        'Test::CompanionClasses' => '0',
+                                        'Data::Semantic::Net::IPAddress::TestData::IPv6' => '0',
+                                        'Class::Value::SemanticAdapter' => '0',
+                                        'Error::Hierarchy::Test' => '0',
+                                        'Class::Value::Test' => '0',
+                                        'English' => '0',
+                                        'parent' => '0',
+                                        'Error::Hierarchy::Mixin' => '0',
+                                        'Class::Value::Exception::Base' => '0',
+                                        'constant' => '0',
+                                        'Carp' => '0',
+                                        'Test::More' => '0.88',
+                                        'Class::Value::Boolean' => '0',
+                                        'File::Temp' => '0',
+                                        'Class::Value::String' => '0'
+                                      },
+                       'LICENSE' => 'perl'
+                     );
+
+
+delete $WriteMakefileArgs{LICENSE}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.31) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
+

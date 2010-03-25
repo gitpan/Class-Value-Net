@@ -1,148 +1,84 @@
-package Class::Value::Net::NAPTR::UInt16_TEST;
-
-# $Id: UInt16_TEST.pm 11581 2006-06-06 14:29:18Z ek $
-
+use 5.008;
 use strict;
 use warnings;
+
+package Class::Value::Net::NAPTR::UInt16_TEST;
+our $VERSION = '1.100840';
+
+# ABSTRACT: Network-related value objects
 use Test::More;
 use Error::Hierarchy::Test 'throws2_ok';
-
-
-our $VERSION = '0.03';
-
-
-use base 'Test::CompanionClasses::Base';
-
-
+use parent 'Test::CompanionClasses::Base';
 use constant PLAN => 2;
 
-
-sub expected_malformed_exception { 
-    "Class::Value::Exception::NotWellFormedValue"
-};
-
+sub expected_malformed_exception {
+    "Class::Value::Exception::NotWellFormedValue";
+}
 
 sub run {
     my $self = shift;
     $self->SUPER::run(@_);
-
     my $obj = $self->make_real_object;
     ok($obj->is_valid_value(4711), "ok 4711");
     local $Class::Value::ThrowSingleException = 1;
-
     throws2_ok {
         $obj->value(16663636363);
-    } $self->expected_malformed_exception,
-      qr/16663636363/;
-
+    }
+    $self->expected_malformed_exception, qr/16663636363/;
 }
-
-
 1;
 
 
 __END__
-
-
+=pod
 
 =head1 NAME
 
-Class::Value::Net::NAPTR::UInt16_TEST - network-related value objects
+Class::Value::Net::NAPTR::UInt16_TEST - Network-related value objects
 
-=head1 SYNOPSIS
+=head1 VERSION
 
-    Class::Value::Net::NAPTR::UInt16_TEST->new;
-
-=head1 DESCRIPTION
-
-None yet. This is an early release; fully functional, but undocumented. The
-next release will have more documentation.
-
-Class::Value::Net::NAPTR::UInt16_TEST inherits from
-L<Test::CompanionClasses::Base>.
-
-The superclass L<Test::CompanionClasses::Base> defines these methods and
-functions:
-
-    new(), clear_package(), make_real_object(), package(), package_clear(),
-    planned_test_count()
-
-The superclass L<Class::Accessor::Complex> defines these methods and
-functions:
-
-    carp(), cluck(), croak(), flatten(), mk_abstract_accessors(),
-    mk_array_accessors(), mk_boolean_accessors(),
-    mk_class_array_accessors(), mk_class_hash_accessors(),
-    mk_class_scalar_accessors(), mk_concat_accessors(),
-    mk_forward_accessors(), mk_hash_accessors(), mk_integer_accessors(),
-    mk_new(), mk_object_accessors(), mk_scalar_accessors(),
-    mk_set_accessors(), mk_singleton()
-
-The superclass L<Class::Accessor> defines these methods and functions:
-
-    _carp(), _croak(), _mk_accessors(), accessor_name_for(),
-    best_practice_accessor_name_for(), best_practice_mutator_name_for(),
-    follow_best_practice(), get(), make_accessor(), make_ro_accessor(),
-    make_wo_accessor(), mk_accessors(), mk_ro_accessors(),
-    mk_wo_accessors(), mutator_name_for(), set()
-
-The superclass L<Class::Accessor::Installer> defines these methods and
-functions:
-
-    install_accessor(), subname()
-
-The superclass L<Data::Inherited> defines these methods and functions:
-
-    every_hash(), every_list(), flush_every_cache_by_key()
+version 1.100840
 
 =head1 METHODS
 
-=over 4
+=head2 expected_malformed_exception
 
-
-
-=back
-
-=head1 TAGS
-
-If you talk about this module in blogs, on del.icio.us or anywhere else,
-please use the C<classvaluenet> tag.
-
-=head1 VERSION 
-                   
-This document describes version 0.03 of L<Class::Value::Net::NAPTR::UInt16_TEST>.
-
-=head1 BUGS AND LIMITATIONS
-
-No bugs have been reported.
-
-Please report any bugs or feature requests to
-C<<bug-class-value-net@rt.cpan.org>>, or through the web interface at
-L<http://rt.cpan.org>.
+FIXME
 
 =head1 INSTALLATION
 
 See perlmodinstall for information and options on installing Perl modules.
 
+=head1 BUGS AND LIMITATIONS
+
+No bugs have been reported.
+
+Please report any bugs or feature requests through the web interface at
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Class-Value-Net>.
+
 =head1 AVAILABILITY
 
 The latest version of this module is available from the Comprehensive Perl
-Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see
+L<http://search.cpan.org/dist/Class-Value-Net/>.
 
-=head1 AUTHORS
+The development version lives at
+L<http://github.com/hanekomu/Class-Value-Net/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 
-Marcel GrE<uuml>nauer, C<< <marcel@cpan.org> >>
+=head1 AUTHOR
 
-Heinz Ekker C<< <ek@univie.ac.at> >>
+  Marcel Gruenauer <marcel@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004-2007 by Marcel GrE<uuml>nauer
+This software is copyright (c) 2004 by Marcel Gruenauer.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
