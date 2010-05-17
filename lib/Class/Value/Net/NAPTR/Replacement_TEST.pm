@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Class::Value::Net::NAPTR::Replacement_TEST;
-our $VERSION = '1.100840';
+BEGIN {
+  $Class::Value::Net::NAPTR::Replacement_TEST::VERSION = '1.101370';
+}
 
 # ABSTRACT: Network-related value objects
 use Test::More;
@@ -16,6 +18,7 @@ sub run {
     my $obj = $self->make_real_object;
     $obj->value("");
     is(sprintf("%s", $obj), '.', "stringify empty value to .");
+    local $Class::Value::SkipChecks = 0;
     ok($obj->is_well_formed_value("1234567"), "well-formed");
     ok(!$obj->is_valid_value('x' x 512),      "too many chars");
 }
@@ -30,7 +33,7 @@ Class::Value::Net::NAPTR::Replacement_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.100840
+version 1.101370
 
 =head1 INSTALLATION
 

@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Class::Value::Net::IPAddress;
-our $VERSION = '1.100840';
+BEGIN {
+  $Class::Value::Net::IPAddress::VERSION = '1.101370';
+}
 
 # ABSTRACT: Network-related value objects
 use parent 'Class::Value::SemanticAdapter';
@@ -50,7 +52,7 @@ Class::Value::Net::IPAddress - Network-related value objects
 
 =head1 VERSION
 
-version 1.100840
+version 1.101370
 
 =head1 METHODS
 

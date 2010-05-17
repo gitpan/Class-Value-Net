@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Class::Value::Net::NAPTR::UInt16_TEST;
-our $VERSION = '1.100840';
+BEGIN {
+  $Class::Value::Net::NAPTR::UInt16_TEST::VERSION = '1.101370';
+}
 
 # ABSTRACT: Network-related value objects
 use Test::More;
@@ -21,6 +23,7 @@ sub run {
     my $obj = $self->make_real_object;
     ok($obj->is_valid_value(4711), "ok 4711");
     local $Class::Value::ThrowSingleException = 1;
+    local $Class::Value::SkipChecks = 0;
     throws2_ok {
         $obj->value(16663636363);
     }
@@ -38,7 +41,7 @@ Class::Value::Net::NAPTR::UInt16_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.100840
+version 1.101370
 
 =head1 METHODS
 

@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Class::Value::Net::NAPTR::Flags;
-our $VERSION = '1.100840';
+BEGIN {
+  $Class::Value::Net::NAPTR::Flags::VERSION = '1.101370';
+}
 
 # ABSTRACT: Network-related value objects
 use parent 'Class::Value::Net::NAPTR::CharacterString';
@@ -41,7 +43,7 @@ Class::Value::Net::NAPTR::Flags - Network-related value objects
 
 =head1 VERSION
 
-version 1.100840
+version 1.101370
 
 =head1 METHODS
 

@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Class::Value::Net::NAPTR::Origin;
-our $VERSION = '1.100840';
+BEGIN {
+  $Class::Value::Net::NAPTR::Origin::VERSION = '1.101370';
+}
 
 # ABSTRACT: Network-related value objects
 # Just a boolean value, but has to have its own class to differentiate it from
@@ -20,7 +22,7 @@ Class::Value::Net::NAPTR::Origin - Network-related value objects
 
 =head1 VERSION
 
-version 1.100840
+version 1.101370
 
 =head1 INSTALLATION
 
