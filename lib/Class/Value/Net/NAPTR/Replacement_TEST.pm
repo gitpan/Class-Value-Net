@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::NAPTR::Replacement_TEST;
 BEGIN {
-  $Class::Value::Net::NAPTR::Replacement_TEST::VERSION = '1.101370';
+  $Class::Value::Net::NAPTR::Replacement_TEST::VERSION = '1.101610';
 }
 
 # ABSTRACT: Network-related value objects
@@ -33,7 +33,7 @@ Class::Value::Net::NAPTR::Replacement_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.101370
+version 1.101610
 
 =head1 INSTALLATION
 
@@ -44,7 +44,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Class-Value-Net>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 

@@ -2,7 +2,7 @@ NAME
     Class::Value::Net - Network-related value objects
 
 VERSION
-    version 1.101370
+    version 1.101610
 
 INSTALLATION
     See perlmodinstall for information and options on installing Perl
@@ -12,7 +12,7 @@ BUGS AND LIMITATIONS
     No bugs have been reported.
 
     Please report any bugs or feature requests through the web interface at
-    <http://rt.cpan.org/Public/Dist/Display.html?Name=Class-Value-Net>.
+    <http://rt.cpan.org>.
 
 AVAILABILITY
     The latest version of this module is available from the Comprehensive

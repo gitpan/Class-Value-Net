@@ -7,7 +7,6 @@ META.json
 META.yml
 Makefile.PL
 README
-dist.ini
 lib/Class/Value/Net.pm
 lib/Class/Value/Net/Exception.pm
 lib/Class/Value/Net/Exception/InvalidIPAddress.pm

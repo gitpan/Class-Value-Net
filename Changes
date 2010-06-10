@@ -1,5 +1,8 @@
 Revision history for Perl extension Class-Value-Net
 
+1.101610  2010-06-10 21:53:36 Europe/Vienna
+    - Class::Value::Net::IPAddress: use Error::Hierarchy::Mixin to get record()
+
 1.101370  2010-05-17 17:45:08 Europe/Vienna
     - local $Class::Value::SkipChecks = 0; # where necessary
 
