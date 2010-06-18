@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::Exception::NAPTR::InvalidOrder;
 BEGIN {
-  $Class::Value::Net::Exception::NAPTR::InvalidOrder::VERSION = '1.101610';
+  $Class::Value::Net::Exception::NAPTR::InvalidOrder::VERSION = '1.101690';
 }
 
 # ABSTRACT: Network-related value objects
@@ -21,7 +21,7 @@ Class::Value::Net::Exception::NAPTR::InvalidOrder - Network-related value object
 
 =head1 VERSION
 
-version 1.101610
+version 1.101690
 
 =head1 INSTALLATION
 

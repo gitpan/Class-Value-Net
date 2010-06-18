@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::IPAddress;
 BEGIN {
-  $Class::Value::Net::IPAddress::VERSION = '1.101610';
+  $Class::Value::Net::IPAddress::VERSION = '1.101690';
 }
 
 # ABSTRACT: Network-related value objects
@@ -12,6 +12,10 @@ use Error::Hierarchy::Mixin;  # get record() for subclasses
 use parent 'Class::Value::SemanticAdapter';
 __PACKAGE__->mk_abstract_accessors(qw(dns_rr_type))
   ->mk_boolean_accessors(qw(forbid_internal));
+
+use constant DEFAULTS => (
+    forbid_internal => 1,
+);
 
 sub semantic_args {
     my $self = shift;
@@ -53,7 +57,7 @@ Class::Value::Net::IPAddress - Network-related value objects
 
 =head1 VERSION
 
-version 1.101610
+version 1.101690
 
 =head1 METHODS
 

@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::Exception;
 BEGIN {
-  $Class::Value::Net::Exception::VERSION = '1.101610';
+  $Class::Value::Net::Exception::VERSION = '1.101690';
 }
 
 # ABSTRACT: Network-related value objects
@@ -20,7 +20,7 @@ Class::Value::Net::Exception - Network-related value objects
 
 =head1 VERSION
 
-version 1.101610
+version 1.101690
 
 =head1 INSTALLATION
 
