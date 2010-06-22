@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::IPAddress::IPv4;
 BEGIN {
-  $Class::Value::Net::IPAddress::IPv4::VERSION = '1.101690';
+  $Class::Value::Net::IPAddress::IPv4::VERSION = '1.101730';
 }
 
 # ABSTRACT: Network-related value objects
@@ -21,7 +21,7 @@ Class::Value::Net::IPAddress::IPv4 - Network-related value objects
 
 =head1 VERSION
 
-version 1.101690
+version 1.101730
 
 =head1 INSTALLATION
 

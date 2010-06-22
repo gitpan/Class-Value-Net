@@ -4,9 +4,10 @@ use warnings;
 
 package Class::Value::Net::IPAddress::IPv4_TEST;
 BEGIN {
-  $Class::Value::Net::IPAddress::IPv4_TEST::VERSION = '1.101690';
+  $Class::Value::Net::IPAddress::IPv4_TEST::VERSION = '1.101730';
 }
 
+use Data::Semantic::Net::IPAddress::TestData::IPv4 1.101730;
 # ABSTRACT: Network-related value objects
 use parent qw(
   Class::Value::Test
@@ -23,7 +24,7 @@ Class::Value::Net::IPAddress::IPv4_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.101690
+version 1.101730
 
 =head1 INSTALLATION
 

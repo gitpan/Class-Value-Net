@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::IPAddress::IPv6_TEST;
 BEGIN {
-  $Class::Value::Net::IPAddress::IPv6_TEST::VERSION = '1.101690';
+  $Class::Value::Net::IPAddress::IPv6_TEST::VERSION = '1.101730';
 }
 
 # ABSTRACT: Network-related value objects
@@ -23,7 +23,7 @@ Class::Value::Net::IPAddress::IPv6_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.101690
+version 1.101730
 
 =head1 INSTALLATION
 

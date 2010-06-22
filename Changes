@@ -1,5 +1,8 @@
 Revision history for Perl extension Class-Value-Net
 
+1.101730  2010-06-22 15:00:24 Europe/Vienna
+    - added minimum version for ::TestData::IPv4
+
 1.101690  2010-06-18 13:04:17 Europe/Vienna
     - Class::Value::Net::IPAddress: forbid_internal defaults to 1 now
 

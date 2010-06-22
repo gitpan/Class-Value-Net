@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::Exception::NAPTR::InvalidRegexp;
 BEGIN {
-  $Class::Value::Net::Exception::NAPTR::InvalidRegexp::VERSION = '1.101690';
+  $Class::Value::Net::Exception::NAPTR::InvalidRegexp::VERSION = '1.101730';
 }
 
 # ABSTRACT: Network-related value objects
@@ -21,7 +21,7 @@ Class::Value::Net::Exception::NAPTR::InvalidRegexp - Network-related value objec
 
 =head1 VERSION
 
-version 1.101690
+version 1.101730
 
 =head1 INSTALLATION
 

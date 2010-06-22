@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::Exception::NAPTR::MalformedServices;
 BEGIN {
-  $Class::Value::Net::Exception::NAPTR::MalformedServices::VERSION = '1.101690';
+  $Class::Value::Net::Exception::NAPTR::MalformedServices::VERSION = '1.101730';
 }
 
 # ABSTRACT: Network-related value objects
@@ -21,7 +21,7 @@ Class::Value::Net::Exception::NAPTR::MalformedServices - Network-related value o
 
 =head1 VERSION
 
-version 1.101690
+version 1.101730
 
 =head1 INSTALLATION
 

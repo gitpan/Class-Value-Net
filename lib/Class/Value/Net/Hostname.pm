@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::Hostname;
 BEGIN {
-  $Class::Value::Net::Hostname::VERSION = '1.101690';
+  $Class::Value::Net::Hostname::VERSION = '1.101730';
 }
 
 # ABSTRACT: Network-related value objects
@@ -54,7 +54,7 @@ Class::Value::Net::Hostname - Network-related value objects
 
 =head1 VERSION
 
-version 1.101690
+version 1.101730
 
 =head1 METHODS
 

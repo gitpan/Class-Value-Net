@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     'Class::Value::SemanticAdapter' => '0',
     'Class::Value::String' => '0',
     'Class::Value::Test' => '0',
-    'Data::Semantic::Net::IPAddress::TestData::IPv4' => '0',
+    'Data::Semantic::Net::IPAddress::TestData::IPv4' => '1.101730',
     'Data::Semantic::Net::IPAddress::TestData::IPv6' => '0',
     'Error::Hierarchy::Mixin' => '0',
     'Error::Hierarchy::Test' => '0',
@@ -44,7 +44,7 @@ my %WriteMakefileArgs = (
     'constant' => '0',
     'parent' => '0'
   },
-  'VERSION' => '1.101690',
+  'VERSION' => '1.101730',
   'test' => {
     'TESTS' => 't/*.t'
   }
