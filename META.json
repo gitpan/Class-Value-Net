@@ -4,7 +4,7 @@
       "Marcel Gruenauer <marcel@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101582, CPAN::Meta::Converter version 2.101591",
+   "generated_by" : "Dist::Zilla version 4.101831, CPAN::Meta::Converter version 2.101670",
    "license" : [
       "perl_5"
    ],
@@ -26,7 +26,7 @@
             "Class::Value::SemanticAdapter" : 0,
             "Class::Value::String" : 0,
             "Class::Value::Test" : 0,
-            "Data::Semantic::Net::IPAddress::TestData::IPv4" : "1.101730",
+            "Data::Semantic::Net::IPAddress::TestData::IPv4" : "1.101750",
             "Data::Semantic::Net::IPAddress::TestData::IPv6" : 0,
             "Error::Hierarchy::Mixin" : 0,
             "Error::Hierarchy::Test" : 0,
@@ -54,163 +54,163 @@
    "provides" : {
       "Class::Value::Net" : {
          "file" : "lib/Class/Value/Net.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception" : {
          "file" : "lib/Class/Value/Net/Exception.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::InvalidIPAddress" : {
          "file" : "lib/Class/Value/Net/Exception/InvalidIPAddress.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::MalformedHostname" : {
          "file" : "lib/Class/Value/Net/Exception/MalformedHostname.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::MalformedIPAddress" : {
          "file" : "lib/Class/Value/Net/Exception/MalformedIPAddress.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::InvalidFlags" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/InvalidFlags.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::InvalidOrder" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/InvalidOrder.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::InvalidPreference" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/InvalidPreference.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::InvalidRegexp" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/InvalidRegexp.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::InvalidReplacement" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/InvalidReplacement.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::InvalidServices" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/InvalidServices.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::MalformedFlags" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/MalformedFlags.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::MalformedOrder" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/MalformedOrder.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::MalformedPreference" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/MalformedPreference.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::MalformedRegexp" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/MalformedRegexp.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::MalformedReplacement" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/MalformedReplacement.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Exception::NAPTR::MalformedServices" : {
          "file" : "lib/Class/Value/Net/Exception/NAPTR/MalformedServices.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::Hostname" : {
          "file" : "lib/Class/Value/Net/Hostname.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::IPAddress" : {
          "file" : "lib/Class/Value/Net/IPAddress.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::IPAddress::IPv4" : {
          "file" : "lib/Class/Value/Net/IPAddress/IPv4.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::IPAddress::IPv4_TEST" : {
          "file" : "lib/Class/Value/Net/IPAddress/IPv4_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::IPAddress::IPv6" : {
          "file" : "lib/Class/Value/Net/IPAddress/IPv6.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::IPAddress::IPv6_TEST" : {
          "file" : "lib/Class/Value/Net/IPAddress/IPv6_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::CharacterString" : {
          "file" : "lib/Class/Value/Net/NAPTR/CharacterString.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::CharacterString_TEST" : {
          "file" : "lib/Class/Value/Net/NAPTR/CharacterString_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Flags" : {
          "file" : "lib/Class/Value/Net/NAPTR/Flags.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Flags_TEST" : {
          "file" : "lib/Class/Value/Net/NAPTR/Flags_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Order" : {
          "file" : "lib/Class/Value/Net/NAPTR/Order.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Order_TEST" : {
          "file" : "lib/Class/Value/Net/NAPTR/Order_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Origin" : {
          "file" : "lib/Class/Value/Net/NAPTR/Origin.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Preference" : {
          "file" : "lib/Class/Value/Net/NAPTR/Preference.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Preference_TEST" : {
          "file" : "lib/Class/Value/Net/NAPTR/Preference_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Regexp" : {
          "file" : "lib/Class/Value/Net/NAPTR/Regexp.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Replacement" : {
          "file" : "lib/Class/Value/Net/NAPTR/Replacement.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Replacement_TEST" : {
          "file" : "lib/Class/Value/Net/NAPTR/Replacement_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Services" : {
          "file" : "lib/Class/Value/Net/NAPTR/Services.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::UInt16" : {
          "file" : "lib/Class/Value/Net/NAPTR/UInt16.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::UInt16_TEST" : {
          "file" : "lib/Class/Value/Net/NAPTR/UInt16_TEST.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       },
       "Class::Value::Net::NAPTR::Wildcard" : {
          "file" : "lib/Class/Value/Net/NAPTR/Wildcard.pm",
-         "version" : "1.101730"
+         "version" : "1.101870"
       }
    },
    "release_status" : "stable",
@@ -224,6 +224,6 @@
          "url" : "http://github.com/hanekomu/Class-Value-Net"
       }
    },
-   "version" : "1.101730"
+   "version" : "1.101870"
 }
 

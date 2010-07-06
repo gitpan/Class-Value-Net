@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::NAPTR::Replacement_TEST;
 BEGIN {
-  $Class::Value::Net::NAPTR::Replacement_TEST::VERSION = '1.101730';
+  $Class::Value::Net::NAPTR::Replacement_TEST::VERSION = '1.101870';
 }
 
 # ABSTRACT: Network-related value objects
@@ -33,7 +33,7 @@ Class::Value::Net::NAPTR::Replacement_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.101730
+version 1.101870
 
 =head1 INSTALLATION
 
@@ -60,7 +60,7 @@ and github infrastructure.
 
 =head1 AUTHOR
 
-  Marcel Gruenauer <marcel@cpan.org>
+Marcel Gruenauer <marcel@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

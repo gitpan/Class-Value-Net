@@ -2,7 +2,7 @@ NAME
     Class::Value::Net - Network-related value objects
 
 VERSION
-    version 1.101730
+    version 1.101870
 
 INSTALLATION
     See perlmodinstall for information and options on installing Perl
@@ -26,7 +26,7 @@ AVAILABILITY
     infrastructure.
 
 AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+    Marcel Gruenauer <marcel@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2004 by Marcel Gruenauer.
