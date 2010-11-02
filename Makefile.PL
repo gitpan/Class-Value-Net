@@ -31,6 +31,7 @@ my %WriteMakefileArgs = (
   'NAME' => 'Class::Value::Net',
   'PREREQ_PM' => {
     'Class::Value::Boolean' => '0',
+    'Class::Value::Enum' => '0',
     'Class::Value::Exception::Base' => '0',
     'Class::Value::SemanticAdapter' => '0',
     'Class::Value::String' => '0',
@@ -44,7 +45,7 @@ my %WriteMakefileArgs = (
     'constant' => '0',
     'parent' => '0'
   },
-  'VERSION' => '1.101870',
+  'VERSION' => '1.103060',
   'test' => {
     'TESTS' => 't/*.t'
   }

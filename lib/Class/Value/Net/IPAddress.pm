@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::IPAddress;
 BEGIN {
-  $Class::Value::Net::IPAddress::VERSION = '1.101870';
+  $Class::Value::Net::IPAddress::VERSION = '1.103060';
 }
 
 # ABSTRACT: Network-related value objects
@@ -57,7 +57,7 @@ Class::Value::Net::IPAddress - Network-related value objects
 
 =head1 VERSION
 
-version 1.101870
+version 1.103060
 
 =head1 METHODS
 
@@ -86,19 +86,18 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Class-Value-Net>.
 
 =head1 AVAILABILITY
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see
-L<http://search.cpan.org/dist/Class-Value-Net/>.
+site near you, or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
-The development version lives at
-L<http://github.com/hanekomu/Class-Value-Net/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
+The development version lives at L<http://github.com/hanekomu/Class-Value-Net>
+and may be cloned from L<git://github.com/hanekomu/Class-Value-Net>.
+Instead of sending patches, please fork this project using the standard
+git and github infrastructure.
 
 =head1 AUTHOR
 

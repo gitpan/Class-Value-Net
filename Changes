@@ -1,5 +1,7 @@
 Revision history for Perl extension Class-Value-Net
 
+1.103060  2010-11-02 15:31:30 Europe/Vienna
+
 1.101870  2010-07-06 13:39:50 Europe/Vienna
     - use Data::Semantic::Net::IPAddress::TestData::IPv4 1.101750
 

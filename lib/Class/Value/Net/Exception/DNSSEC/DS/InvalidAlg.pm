@@ -2,65 +2,26 @@ use 5.008;
 use strict;
 use warnings;
 
-package Class::Value::Net::NAPTR::Replacement;
+package Class::Value::Net::Exception::DNSSEC::DS::InvalidAlg;
 BEGIN {
-  $Class::Value::Net::NAPTR::Replacement::VERSION = '1.103060';
+  $Class::Value::Net::Exception::DNSSEC::DS::InvalidAlg::VERSION = '1.103060';
 }
 
 # ABSTRACT: Network-related value objects
-use parent 'Class::Value::Net::Hostname';
-
-# The replacement is essentially a hostname. It can be empty as well. If it is
-# empty, it should stringify to '.' - this doesn't mean it should normalize to
-# the dot. The empty value should be stored as such, and only during
-# stringification will it become a dot.
-sub send_notify_value_invalid {
-    my ($self, $value) = @_;
-    local $Error::Depth = $Error::Depth + 2;
-    $self->exception_container->record(
-        'Class::Value::Net::Exception::NAPTR::InvalidReplacement',
-        recordfield => $value,);
-}
-
-sub send_notify_value_not_wellformed {
-    my ($self, $value) = @_;
-    local $Error::Depth = $Error::Depth + 2;
-    $self->exception_container->record(
-        'Class::Value::Net::Exception::NAPTR::MalformedReplacement',
-        recordfield => $value,);
-}
-
-sub stringify {
-    my $self = shift;
-    sprintf '%s', $self->SUPER::stringify() || '.';
-}
+use parent 'Class::Value::Net::Exception::DNSSEC';
+use constant default_message => 'Invalid Algorithm [%s]';
 1;
-
 
 __END__
 =pod
 
 =head1 NAME
 
-Class::Value::Net::NAPTR::Replacement - Network-related value objects
+Class::Value::Net::Exception::DNSSEC::DS::InvalidAlg - Network-related value objects
 
 =head1 VERSION
 
 version 1.103060
-
-=head1 METHODS
-
-=head2 send_notify_value_invalid
-
-FIXME
-
-=head2 send_notify_value_not_wellformed
-
-FIXME
-
-=head2 stringify
-
-FIXME
 
 =head1 INSTALLATION
 

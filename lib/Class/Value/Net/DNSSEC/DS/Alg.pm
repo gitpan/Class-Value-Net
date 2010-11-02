@@ -2,38 +2,38 @@ use 5.008;
 use strict;
 use warnings;
 
-package Class::Value::Net::NAPTR::Replacement;
+package Class::Value::Net::DNSSEC::DS::Alg;
 BEGIN {
-  $Class::Value::Net::NAPTR::Replacement::VERSION = '1.103060';
+  $Class::Value::Net::DNSSEC::DS::Alg::VERSION = '1.103060';
 }
 
-# ABSTRACT: Network-related value objects
-use parent 'Class::Value::Net::Hostname';
+use parent 'Class::Value::Enum';
 
-# The replacement is essentially a hostname. It can be empty as well. If it is
-# empty, it should stringify to '.' - this doesn't mean it should normalize to
-# the dot. The empty value should be stored as such, and only during
-# stringification will it become a dot.
+# http://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml
+# we support all algorithms that can be used for zone signing.
+
+sub get_valid_values_list {
+    [
+        3,         # DSA/SHA1
+        5,         # RSA/SHA-1
+        6,         # DSA-NSEC3-SHA1
+        7,         # RSASHA1-NSEC3-SHA1
+        8,         # RSA/SHA-256
+        10,        # RSA/SHA-512
+        12,        # GOST R 34.10-2001
+        253,       # Private algorithms - domain name
+        254,       # Private algorithms - OID
+    ]
+}
+
 sub send_notify_value_invalid {
     my ($self, $value) = @_;
     local $Error::Depth = $Error::Depth + 2;
     $self->exception_container->record(
-        'Class::Value::Net::Exception::NAPTR::InvalidReplacement',
+        'Class::Value::Net::Exception::DNSSEC::DS::InvalidAlg',
         recordfield => $value,);
 }
 
-sub send_notify_value_not_wellformed {
-    my ($self, $value) = @_;
-    local $Error::Depth = $Error::Depth + 2;
-    $self->exception_container->record(
-        'Class::Value::Net::Exception::NAPTR::MalformedReplacement',
-        recordfield => $value,);
-}
-
-sub stringify {
-    my $self = shift;
-    sprintf '%s', $self->SUPER::stringify() || '.';
-}
 1;
 
 
@@ -42,7 +42,7 @@ __END__
 
 =head1 NAME
 
-Class::Value::Net::NAPTR::Replacement - Network-related value objects
+Class::Value::Net::DNSSEC::DS::Alg
 
 =head1 VERSION
 
@@ -55,10 +55,6 @@ version 1.103060
 FIXME
 
 =head2 send_notify_value_not_wellformed
-
-FIXME
-
-=head2 stringify
 
 FIXME
 
