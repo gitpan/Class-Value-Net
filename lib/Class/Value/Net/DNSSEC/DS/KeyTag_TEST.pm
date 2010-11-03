@@ -4,8 +4,9 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::KeyTag_TEST;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::KeyTag_TEST::VERSION = '1.103060';
+  $Class::Value::Net::DNSSEC::DS::KeyTag_TEST::VERSION = '1.103070';
 }
+# ABSTRACT: Network-related value objects
 
 use Test::More;
 use parent 'Class::Value::Test';
@@ -23,11 +24,11 @@ __END__
 
 =head1 NAME
 
-Class::Value::Net::DNSSEC::DS::KeyTag_TEST
+Class::Value::Net::DNSSEC::DS::KeyTag_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.103060
+version 1.103070
 
 =head1 INSTALLATION
 

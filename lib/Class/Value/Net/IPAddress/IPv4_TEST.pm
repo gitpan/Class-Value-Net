@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::IPAddress::IPv4_TEST;
 BEGIN {
-  $Class::Value::Net::IPAddress::IPv4_TEST::VERSION = '1.103060';
+  $Class::Value::Net::IPAddress::IPv4_TEST::VERSION = '1.103070';
 }
 
 use Data::Semantic::Net::IPAddress::TestData::IPv4 1.101750;
@@ -24,7 +24,7 @@ Class::Value::Net::IPAddress::IPv4_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.103060
+version 1.103070
 
 =head1 INSTALLATION
 

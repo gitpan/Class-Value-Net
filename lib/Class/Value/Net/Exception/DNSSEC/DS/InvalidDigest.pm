@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::Exception::DNSSEC::DS::InvalidDigest;
 BEGIN {
-  $Class::Value::Net::Exception::DNSSEC::DS::InvalidDigest::VERSION = '1.103060';
+  $Class::Value::Net::Exception::DNSSEC::DS::InvalidDigest::VERSION = '1.103070';
 }
 
 # ABSTRACT: Network-related value objects
@@ -21,7 +21,7 @@ Class::Value::Net::Exception::DNSSEC::DS::InvalidDigest - Network-related value 
 
 =head1 VERSION
 
-version 1.103060
+version 1.103070
 
 =head1 INSTALLATION
 

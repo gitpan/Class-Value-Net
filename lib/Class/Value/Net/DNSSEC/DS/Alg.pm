@@ -4,8 +4,9 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::Alg;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::Alg::VERSION = '1.103060';
+  $Class::Value::Net::DNSSEC::DS::Alg::VERSION = '1.103070';
 }
+# ABSTRACT: Network-related value objects
 
 use parent 'Class::Value::Enum';
 
@@ -42,11 +43,11 @@ __END__
 
 =head1 NAME
 
-Class::Value::Net::DNSSEC::DS::Alg
+Class::Value::Net::DNSSEC::DS::Alg - Network-related value objects
 
 =head1 VERSION
 
-version 1.103060
+version 1.103070
 
 =head1 METHODS
 

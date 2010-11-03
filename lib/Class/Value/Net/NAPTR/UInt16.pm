@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::NAPTR::UInt16;
 BEGIN {
-  $Class::Value::Net::NAPTR::UInt16::VERSION = '1.103060';
+  $Class::Value::Net::NAPTR::UInt16::VERSION = '1.103070';
 }
 
 # ABSTRACT: Network-related value objects
@@ -40,7 +40,7 @@ Class::Value::Net::NAPTR::UInt16 - Network-related value objects
 
 =head1 VERSION
 
-version 1.103060
+version 1.103070
 
 =head1 METHODS
 

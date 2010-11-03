@@ -4,14 +4,18 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::KeyTag;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::KeyTag::VERSION = '1.103060';
+  $Class::Value::Net::DNSSEC::DS::KeyTag::VERSION = '1.103070';
 }
+# ABSTRACT: Network-related value objects
 
 use parent 'Class::Value::String';
 
 
 sub is_valid_string_value {
     my ($self, $value) = @_;
+    return 1 unless defined($value) && length($value);
+    # Don't call SUPER::; we don't want max length and character set to be
+    # checked
     $value =~ m/^[0-9]*$/ && $value != 0;
 }
 
@@ -31,11 +35,11 @@ __END__
 
 =head1 NAME
 
-Class::Value::Net::DNSSEC::DS::KeyTag
+Class::Value::Net::DNSSEC::DS::KeyTag - Network-related value objects
 
 =head1 VERSION
 
-version 1.103060
+version 1.103070
 
 =head1 METHODS
 

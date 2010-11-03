@@ -1,5 +1,8 @@
 Revision history for Perl extension Class-Value-Net
 
+1.103070  2010-11-03 12:31:06 Europe/Vienna
+    - implemented DNSSEC RR DS
+
 1.103060  2010-11-02 15:31:30 Europe/Vienna
 
 1.101870  2010-07-06 13:39:50 Europe/Vienna
