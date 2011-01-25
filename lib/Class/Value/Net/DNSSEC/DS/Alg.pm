@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::Alg;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::Alg::VERSION = '1.103070';
+  $Class::Value::Net::DNSSEC::DS::Alg::VERSION = '1.110250';
 }
 # ABSTRACT: Network-related value objects
 
@@ -22,8 +22,6 @@ sub get_valid_values_list {
         8,         # RSA/SHA-256
         10,        # RSA/SHA-512
         12,        # GOST R 34.10-2001
-        253,       # Private algorithms - domain name
-        254,       # Private algorithms - OID
     ]
 }
 
@@ -47,7 +45,7 @@ Class::Value::Net::DNSSEC::DS::Alg - Network-related value objects
 
 =head1 VERSION
 
-version 1.103070
+version 1.110250
 
 =head1 METHODS
 
@@ -77,7 +75,7 @@ Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 The development version lives at L<http://github.com/hanekomu/Class-Value-Net>
-and may be cloned from L<git://github.com/hanekomu/Class-Value-Net>.
+and may be cloned from L<git://github.com/hanekomu/Class-Value-Net.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 

@@ -1,5 +1,12 @@
 Revision history for Perl extension Class-Value-Net
 
+1.110250  2011-01-25 14:02:02 Europe/Vienna
+    - is_valid_string_value checks value for defindeness and length, docs why we don't call SUPER
+    - removed private algorithms 253, 254
+    - adapted tests after deletion of unsupported algorithms
+    - included valiation for 16 bit integer + tests
+    - normalize Digest via lc + added tests
+
 1.103070  2010-11-03 12:31:06 Europe/Vienna
     - implemented DNSSEC RR DS
 

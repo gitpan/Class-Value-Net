@@ -4,19 +4,21 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::KeyTag;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::KeyTag::VERSION = '1.103070';
+  $Class::Value::Net::DNSSEC::DS::KeyTag::VERSION = '1.110250';
 }
+
 # ABSTRACT: Network-related value objects
-
 use parent 'Class::Value::String';
-
 
 sub is_valid_string_value {
     my ($self, $value) = @_;
     return 1 unless defined($value) && length($value);
+
     # Don't call SUPER::; we don't want max length and character set to be
-    # checked
-    $value =~ m/^[0-9]*$/ && $value != 0;
+    # checked.
+    #
+    # KeyTag should be a number >= 0 && < 65536
+    $value =~ m/^[0-9]*$/ && $value >= 0 && $value < 65536;
 }
 
 sub send_notify_value_invalid {
@@ -26,7 +28,6 @@ sub send_notify_value_invalid {
         'Class::Value::Net::Exception::DNSSEC::DS::InvalidKeyTag',
         recordfield => $value,);
 }
-
 1;
 
 
@@ -39,7 +40,7 @@ Class::Value::Net::DNSSEC::DS::KeyTag - Network-related value objects
 
 =head1 VERSION
 
-version 1.103070
+version 1.110250
 
 =head1 METHODS
 
@@ -69,7 +70,7 @@ Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 The development version lives at L<http://github.com/hanekomu/Class-Value-Net>
-and may be cloned from L<git://github.com/hanekomu/Class-Value-Net>.
+and may be cloned from L<git://github.com/hanekomu/Class-Value-Net.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 

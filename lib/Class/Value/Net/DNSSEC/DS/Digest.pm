@@ -4,11 +4,17 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::Digest;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::Digest::VERSION = '1.103070';
+  $Class::Value::Net::DNSSEC::DS::Digest::VERSION = '1.110250';
 }
 # ABSTRACT: Network-related value objects
 
 use parent 'Class::Value::String';
+
+sub normalize_value {
+    my ($self, $value) = @_;
+    return unless defined($value);
+    lc($value);
+}
 
 sub is_valid_string_value {
     my ($self, $value) = @_;
@@ -38,7 +44,7 @@ Class::Value::Net::DNSSEC::DS::Digest - Network-related value objects
 
 =head1 VERSION
 
-version 1.103070
+version 1.110250
 
 =head1 METHODS
 
@@ -68,7 +74,7 @@ Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 The development version lives at L<http://github.com/hanekomu/Class-Value-Net>
-and may be cloned from L<git://github.com/hanekomu/Class-Value-Net>.
+and may be cloned from L<git://github.com/hanekomu/Class-Value-Net.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 

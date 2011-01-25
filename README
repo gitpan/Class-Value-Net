@@ -2,7 +2,7 @@ NAME
     Class::Value::Net - Network-related value objects
 
 VERSION
-    version 1.103070
+    version 1.110250
 
 INSTALLATION
     See perlmodinstall for information and options on installing Perl
@@ -22,8 +22,8 @@ AVAILABILITY
 
     The development version lives at
     <http://github.com/hanekomu/Class-Value-Net> and may be cloned from
-    <git://github.com/hanekomu/Class-Value-Net>. Instead of sending patches,
-    please fork this project using the standard git and github
+    <git://github.com/hanekomu/Class-Value-Net.git>. Instead of sending
+    patches, please fork this project using the standard git and github
     infrastructure.
 
 AUTHOR

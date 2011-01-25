@@ -4,7 +4,7 @@ use warnings;
 
 package Class::Value::Net::DNSSEC::DS::Alg_TEST;
 BEGIN {
-  $Class::Value::Net::DNSSEC::DS::Alg_TEST::VERSION = '1.103070';
+  $Class::Value::Net::DNSSEC::DS::Alg_TEST::VERSION = '1.110250';
 }
 # ABSTRACT: Network-related value objects
 
@@ -12,8 +12,8 @@ use Test::More;
 use parent 'Class::Value::Test';
 use constant TESTDATA => (
     {   args    => {},
-        invalid => [ qw/-1 0 1 2 4 9 11 255 string/, 13 .. 251 ],
-        valid   => [ qw/3 5 6 7 8 10 12 253 254/ ],
+        invalid => [ qw/-1 0 1 2 4 9 11 253 254 255 string/, 13 .. 251 ],
+        valid   => [ qw/3 5 6 7 8 10 12/ ],
     },
 );
 
@@ -28,7 +28,7 @@ Class::Value::Net::DNSSEC::DS::Alg_TEST - Network-related value objects
 
 =head1 VERSION
 
-version 1.103070
+version 1.110250
 
 =head1 INSTALLATION
 
@@ -48,7 +48,7 @@ Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 The development version lives at L<http://github.com/hanekomu/Class-Value-Net>
-and may be cloned from L<git://github.com/hanekomu/Class-Value-Net>.
+and may be cloned from L<git://github.com/hanekomu/Class-Value-Net.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 
